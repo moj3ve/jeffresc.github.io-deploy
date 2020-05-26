@@ -1,12 +1,13 @@
 <a href="<%= url %>" target="_blank">
   <section>
-    <div class="section_title"><%= name %></div>
-    <div class="about_section">
-      <span style="display:block;"><%= description %></span>
+    <div class="leftTile">
+      <img src="img/<%= image %>" alt="<%= name %> Icon" height="85" width="85" />
     </div>
-    <div class="bottom_section">
-      <span style="display:inline-block;"><i class="fas fa-<%= bottom_icon %>"></i>&nbsp; <%= bottom_text %></span>
-      <span><i class="fas fa-<%= bottom_icon2 %>"></i>&nbsp; <%= bottom_text2 %></span>
+    <div class="rightTile">
+      <div class="section_title"><%= name %></div>
+      <div class="about_section">
+        <span style="display:block;"><%- description %></span>
+      </div>
     </div>
   </section>
 </a>

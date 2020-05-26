@@ -1,21 +1,15 @@
 {
   "items": [{
       "name": "SongShare",
-      "description": "Easy share songs with friends (iOS 10 - 13)",
+      "description": "Easily share songs with friends!<br>iOS 10 - 13",
       "url": "https://repo.dynastic.co/package/dev.jeffresc.songshare",
-      "bottom_icon": "code",
-      "bottom_text": "Open-Source",
-      "bottom_icon2": "dollar-sign",
-      "bottom_text2": "Free"
+      "image": "dev.jeffresc.songshare.webp"
     },
     {
       "name": "Meteoroid",
-      "description": "Automatically set your wallpaper from various NASA sources (iOS 11 & 12)",
+      "description": "Automatically set your wallpaper from various NASA sources.<br>iOS 11 & 12",
       "url": "https://repo.dynastic.co/package/com.jeffresc.meteoroid",
-      "bottom_icon": "code",
-      "bottom_text": "Open-Source",
-      "bottom_icon2": "dollar-sign",
-      "bottom_text2": "Free"
+      "image": "com.jeffresc.meteoroid.webp"
     }
   ]
 }

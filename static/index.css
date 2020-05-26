@@ -594,3 +594,19 @@ body {
       url("img/ocean-waves-crashing-on-rocks-3591558.jpg") !important;
   }
 }
+
+.leftTile {
+  width: 10%;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.rightTile {
+  width: 70%;
+  display: block;
+  float: right;
+}
