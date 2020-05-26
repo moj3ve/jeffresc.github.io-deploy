@@ -1,0 +1,15 @@
+{
+	"name": "jeffresc.github.io-deploy",
+	"version": "0.0.1",
+	"description": "A simple Node.js script to generate my website",
+	"main": "generate.js",
+	"author": "Jeff Rescignano",
+	"dependencies": {
+		"@octokit/rest": "^17.9.2",
+		"ejs": "^3.1.3",
+		"ncp": "^2.0.0"
+	},
+	"scripts": {
+		"build": "node generate.js"
+	}
+}

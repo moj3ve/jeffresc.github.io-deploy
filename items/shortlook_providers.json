@@ -1,0 +1,120 @@
+{
+  "items": [{
+      "name": "YouTube Thumbnails",
+      "description": "Show YouTube video thumbnails in ShortLook when you receive a YouTube upload notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.youtube",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Messenger",
+      "description": "Show Facebook Messenger users' profile pictures in ShortLook when you receive a Messenger notification!",
+      "url": "https://repo.dynastic.co/package/shortlook-messenger",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Reddit",
+      "description": "Show Reddit users' profile pictures in ShortLook when you receive a Reddit notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.reddit",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "TikTok",
+      "description": "Show TikTok users' profile pictures in ShortLook when you receive a TikTok notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.tiktok",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Apollo",
+      "description": "Show Reddit users' profile pictures in ShortLook when you receive a Apollo notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.apollo",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Twitch",
+      "description": "Show Twitch users' profile pictures in ShortLook when you receive a Twitch notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.twitch",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Steam",
+      "description": "Show Steam users' profile pictures in ShortLook when you receive a Steam notification!",
+      "url": "https://repo.dynastic.co/package/shortlook-steam",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Skype",
+      "description": "Show Skype users' profile pictures in ShortLook when you receive a Skype notification!",
+      "url": "https://repo.dynastic.co/package/shortlook-skype",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Tweetbot",
+      "description": "Show TweetBot users' profile pictures in ShortLook when you receive a Tweetbot notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.tweetbot",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Pinterest",
+      "description": "Show Pinterest users' profile pictures in ShortLook when you receive a Pinterest notification!",
+      "url": "https://repo.dynastic.co/package/shortlook-pinterest",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Tumblr",
+      "description": "Show Tumblr users' profile pictures in ShortLook when you receive a Tumblr notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.tumblr",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "WeChat",
+      "description": "Show WeChat users' profile pictures in ShortLook when you receive a WeChat notification!",
+      "url": "https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.wechat",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    },
+    {
+      "name": "Kik",
+      "description": "Show Kik users' profile pictures in ShortLook when you receive a Kik notification!",
+      "url": "https://repo.dynastic.co/package/shortlook-kik",
+      "bottom_icon": "code",
+      "bottom_text": "Open-Source",
+      "bottom_icon2": "dollar-sign",
+      "bottom_text2": "Free"
+    }
+  ]
+}
