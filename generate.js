@@ -8,7 +8,7 @@ const {
 } = require("@octokit/rest");
 const fs = require('fs');
 const path = require('path');
-var ncp = require('ncp').ncp;
+const ncp = require('ncp').ncp;
 
 // Initialize Octokit
 const octokit = new Octokit();
