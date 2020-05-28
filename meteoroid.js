@@ -78,8 +78,8 @@ async function getAPODData() {
   return obj;
 }
 
-async function getSpaceXData(cb) {
-  const response = await got.stream('https://api.flickr.com/services/feeds/photos_public.gne?id=130608600@N05&lang=en-us&format=rss_200');
+async function getFlickrData(id, username, cb) {
+  const response = await got.stream('https://api.flickr.com/services/feeds/photos_public.gne?id=' + id + '&lang=en-us&format=rss_200');
 
   var feedparser = new FeedParser();
   response.pipe(feedparser);
@@ -101,13 +101,12 @@ async function getSpaceXData(cb) {
 
   feedparser.on('end', function() {
     const item = items[Math.floor(Math.random() * items.length)];
-    const photo_id = parseInt(item.link.substring(37, item.link.length - 1));
-    FlickrPhoto('spacex', photo_id, FlickrPhoto.sizes.original)
+    const photo_id = parseInt(item.link.split('/')[5]);
+    FlickrPhoto(username, photo_id, FlickrPhoto.sizes.original)
       .catch(console.error).then((imageURL) => {
         var obj = {};
         obj.imageView = item.link;
         obj.imageURL = imageURL;
-
         cb(obj);
       });
   });
@@ -151,13 +150,73 @@ async function runMain() {
     console.log('source3.json has been successfully written');
   });
 
-  // Source 4 - SpaceX
-  getSpaceXData(function(SpaceX_Object) {
+  // Source 4 - SpaceX Flickr
+  getFlickrData('130608600@N05', 'spacex', function(SpaceX_Object) {
     fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source4.json'), JSON.stringify(SpaceX_Object), {
       flag: 'w'
     }, function(err) {
       if (err) throw err;
       console.log('source4.json has been successfully written');
+    });
+  });
+
+  // Source 5 - NASA HQ Flickr
+  getFlickrData('35067687@N04', 'nasahqphoto', function(NASA_HQ_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source5.json'), JSON.stringify(NASA_HQ_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source5.json has been successfully written');
+    });
+  });
+
+  // Source 6 - NASA JPL Flickr
+  getFlickrData('37211895@N03', 'nasa-jpl', function(NASA_JPL_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source6.json'), JSON.stringify(NASA_JPL_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source6.json has been successfully written');
+    });
+  });
+
+  // Source 7 - NASA Johnson Flickr
+  getFlickrData('29988733@N04', 'nasa2explore', function(NASA_Johnson_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source7.json'), JSON.stringify(NASA_Johnson_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source7.json has been successfully written');
+    });
+  });
+
+  // Source 8 - NASA Kennedy Flickr
+  getFlickrData('108488366@N07', 'nasakennedy', function(NASA_Kennedy_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source8.json'), JSON.stringify(NASA_Kennedy_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source8.json has been successfully written');
+    });
+  });
+
+  // Source 9 - NASA Goddard Flickr
+  getFlickrData('24662369@N07', 'gsfc', function(NASA_Goddard_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source9.json'), JSON.stringify(NASA_Goddard_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source9.json has been successfully written');
+    });
+  });
+
+  // Source 10 - NASA Marshall Flickr
+  getFlickrData('122910914@N04', 'nasamarshallphotos', function(NASA_Marshall_Object) {
+    fs.writeFile(path.join(__dirname, 'build', 'meteoroid_api', 'source10.json'), JSON.stringify(NASA_Marshall_Object), {
+      flag: 'w'
+    }, function(err) {
+      if (err) throw err;
+      console.log('source10.json has been successfully written');
     });
   });
 }
