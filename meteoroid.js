@@ -102,7 +102,7 @@ async function getFlickrData(id, username, cb) {
   feedparser.on('end', function() {
     const item = items[Math.floor(Math.random() * items.length)];
     const photo_id = parseInt(item.link.split('/')[5]);
-    FlickrPhoto(username, photo_id, FlickrPhoto.sizes.original)
+    FlickrPhoto(username, photo_id, FlickrPhoto.sizes.large)
       .catch(console.error).then((imageURL) => {
         var obj = {};
         obj.imageView = item.link;
